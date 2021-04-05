@@ -1,5 +1,7 @@
 # materialize_learnings
 This cheatsheet was created to have an easy access to materialize classes.This was developed as part of my transition from Bootstrap to Materialize.
+![image](https://user-images.githubusercontent.com/67477696/113638132-0c306800-966e-11eb-9c9c-23ae0c38054f.png)
+
 ![image](https://user-images.githubusercontent.com/67477696/113637647-05edbc00-966d-11eb-9c4d-d7ef39b50b2d.png)
 ![image](https://user-images.githubusercontent.com/67477696/113637778-536a2900-966d-11eb-97b5-413df2e6e9bb.png)
 ![image](https://user-images.githubusercontent.com/67477696/113637837-74327e80-966d-11eb-9dd7-c27fe673845f.png)
@@ -12,6 +14,6 @@ This cheatsheet was created to have an easy access to materialize classes.This w
 
 ![image](https://user-images.githubusercontent.com/67477696/113637375-5c0e2f80-966c-11eb-8c3b-8a011a1bbe03.png)
 ![image](https://user-images.githubusercontent.com/67477696/113637968-b65bc000-966d-11eb-96a1-672bb32fd3c8.png)
+![image](https://user-images.githubusercontent.com/67477696/113638059-e4d99b00-966d-11eb-8014-f01108b09c91.png)
 
-![image](https://user-images.githubusercontent.com/67477696/113637567-cc1cb580-966c-11eb-80a7-04740dcbb86e.png)
 
