@@ -11,10 +11,86 @@
      <!-- Compiled and minified CSS -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
+      <!-- JQuery CDN -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" ></script>
 </head>
 <body>
     
+    
+ 
+        <nav class="nav"> 
+            <div class="nav-wrapper">
+                    <a href="#!" class="brand-logo"> J L Rajkumar</a>
+                    <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#exp">Experience</a></li>
+                    <li><a href="#edu">Education</a></li>
+                    <li><a href="#proj">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
 
+        <ul class="sidenav" id="mobile-demo">
+            <li><a href="#about">About</a></li>
+            <li><a href="#exp">Experience</a></li>
+            <li><a href="#edu">Education</a></li>
+            <li><a href="#proj">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+            
+        </ul> 
+
+
+    
+
+      
+
+        <div class="parallax-container " >
+            <div class="parallax pink">
+                <img src="./Resources/materialize_logo.svg" width="50px" height="50px">            
+            </div>
+
+            <div class="container s12 center-align" style="margin-top: 420px;">
+                <a class="btn-floating pulse waves-effect waves-white" href="#slides" >
+                    <i class="material-icons">keyboard_arrow_down</i>
+                </a>
+            </div>
+
+        </div> <!--Parallax Container--> 
+
+        <div class="section center-align"  id= "slides">
+        <h4 class="red-text">  Carousel Slider </h4>
+        </div>
+
+        <div class="divider"></div>
+        <br>
+    <div class="main-wrapper">
+        <div class="carousel carousel-slider center controls"><!--Carousel Slider-->
+            <div class="carousel-fixed-item center">
+              <a class="btn waves-effect teal ">Know More</a>
+            </div>
+            <div class="carousel-item red white-text left-align" href="#one!">
+              <h2>First Panel</h2>
+              <p class="white-text">This is your first panel</p>
+            </div>
+            <div class="carousel-item amber white-text center-align" href="#two!">
+              <h2>Second Panel</h2>
+              <p class="white-text">This is your second panel</p>
+            </div>
+            <div class="carousel-item green white-text right-align" href="#three!">
+              <h2>Third Panel</h2>
+              <p class="white-text">This is your third panel</p>
+            </div>
+            <div class="carousel-item blue white-text" href="#four!">
+              <h2>Fourth Panel</h2>
+              <p class="white-text">This is your fourth panel</p>
+            </div>
+        </div>
+    </div>
+    
+        <br><br><br>
+   
     <div class="row" id="home">
         <!--Rows and Columns-->
 <h4 class="center">Rows and Columns</h4> <div class="divider"></div> <br>
@@ -345,6 +421,57 @@
 </div>
 
 
+<!-- Q&A /Collapsible-->
+
+<!--Cards -->
+<h4 class="center" id="collapsible">Collapsible / Accordion</h4> <div class="divider"></div> <br>
+<div class="container">
+
+        <ul class="collapsible">
+
+            <li>
+                <div class="collapsible-header">What  are you  doing now? 
+                    <i class="material-icons" style="margin-left: 630px;">keyboard_arrow_down</i>
+                </div>
+                <div class="collapsible-body grey lighten-3">
+                   <p>Check below collapsible for code</p>
+                </div>
+            </li>
+
+            <li>
+                    <div class="collapsible-header">How to do Collapsible?
+                        <i class="material-icons" style="margin-left: 645px;">keyboard_arrow_down</i>
+                    </div>
+                    
+                    <div class="collapsible-body grey lighten-3">
+                       <p>This can be done using class:
+                           <ul>
+                               <li>
+                                <code>collapsible</code> to <em>Ul</em> and
+                               </li>
+
+                               <li>
+                                <code>collapsible-body</code> to <em>li</em> 
+                               </li>
+
+                           </ul>
+                             </p>
+                    </div>
+            </li>
+
+               
+
+                <li>
+                    <div class="collapsible-header">Implementation of collapsible
+                        <i class="material-icons" style="margin-left: 600px;">keyboard_arrow_down</i>
+                    </div>
+                    <div class="collapsible-body grey lighten-3">
+                        <img  class ="responsive-img" src="./Resources/collapsible-simple-code.png" alt="" srcset="">
+                    </div>
+                </li>
+        </ul>
+</div>
+
 <h4 class="center">Fixed Action button </h4>
 <div class="fixed-action-btn">
     <a class="btn-floating btn-large red">
@@ -394,6 +521,7 @@
             <li><a class="grey-text text-lighten-3" href="#buttons">Buttons</a></li>
             <li><a class="grey-text text-lighten-3" href="#helpers">Helpers</a></li>
             <li><a class="grey-text text-lighten-3" href="#cards">Cards</a></li>
+            <li><a class="grey-text text-lighten-3" href="#collapsible">Collapsible</a></li>
           </ul>
         </div>
       </div>
@@ -408,6 +536,7 @@
     </div>
   </footer>
 
+
   <script> //Init fixed-action-btn
 
     document.addEventListener('DOMContentLoaded', function() {
@@ -416,6 +545,41 @@
      
     });
   }); 
+
+</script>
+
+
+<script> // Nav bar init
+  $(document).ready(function(){
+    $('.sidenav').sidenav();
+  });
+</script>
+
+
+<script>//parallax
+
+$(document).ready(function(){
+    $('.parallax').parallax();
+  });
+
+  $(document).ready(function(){   //Collapsible init
+    $('.collapsible').collapsible();
+  });
+</script> 
+
+<script> //carousel-slider
+    //Add JQuery CDN to work below code
+  $(document).ready(function(){
+    
+  $('.carousel.carousel-slider').carousel({
+    fullWidth: true,
+    indicators: true
+  });
+
+    setInterval(()=>{ //Autoplay after 3 seconds 
+        $('.carousel').carousel('next');
+    },3000)
+  });
 
 </script>
 
